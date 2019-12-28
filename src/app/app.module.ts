@@ -13,6 +13,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { SearchComponent } from './search/search.component';
 import { StarsComponent } from './stars/stars.component';
 import {ProductService} from './shared/product.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {ProductService} from './shared/product.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
